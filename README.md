@@ -1,52 +1,135 @@
-Lab 5 - WAD621S Styling Lab
-Overview
+## ReadMe File for Lab 5
 
-In this lab, I created a modern, responsive UI using CSS. The HTML structure was provided, but all styling was implemented independently. I focused on cards, buttons, forms, navigation, a calendar, and a mood tracker. The lab includes interactive hover states, responsive layouts, and light/dark theme support.
+# Web Application Development (WAD621S) Styling Lab - Lab 05
 
-Features
+## Overview
 
-Cards: Shadow effects, rounded corners, hover lift/scale, smaller images for readability
+This is a hands-on styling lab where you'll write CSS to style various UI components from scratch. The HTML structure is provided, but you need to implement all the styling yourself.
 
-Buttons: Primary, success, warning, info, outline variants; hover, disabled, and transform effects
+## Learning Objectives
 
-Forms: Styled labels, inputs, selects, and textareas; focus states for accessibility
+By completing this lab, you will:
 
-Navigation: Horizontal bar with active and hover states
+1. Practice writing CSS for modern web components
+2. Learn to create consistent design systems
+3. Understand responsive design principles
+4. Implement interactive states (hover, active, focus)
+5. Work with CSS variables for theming
 
-Mood Tracker & Calendar: Interactive emoji and date selection with visual feedback
+## Getting Started
 
-Themes: Light and dark mode using CSS variables
+1. Fork/Clone the Repository to have it locally
+2. Open the HTML file in a code editor (VS Code)
+3. Examine the HTML structure of each component
+4. Write CSS rules in the provided style file
+5. Open the HTML file in a browser to see your results
+6. Use developer tools to test and debug your styles
 
-Responsive Design: Component grid adjusts for tablets and mobile devices
+## Challenge Components
 
-Challenges
+### 1. Cards
+- Create cards with shadow effects
+- Implement rounded corners
+- Add hover effects with transitions
+- Style card images and content areas
 
-Card Images: Adjusting image size without breaking layout
+### 2. Buttons
+- Create a primary button style
+- Implement success, warning, and info variants
+- Create an outline button style
+- Add disabled state styling
+- Style buttons with icons
 
-Button Hover Effects: Balancing subtle scaling and shadow for a clean look
+### 3. Chips
+- Create rounded filter chips
+- Implement active state styling
+- Style chips with icons
+- Add close button styling
 
-Responsive Grid: Ensuring all components remain readable and aligned on smaller screens
+### 4. Navigation
+- Create a horizontal navigation bar
+- Style active state indicators
+- Add hover effects
+- Ensure proper spacing
 
-Mood Tracker & Calendar: Implementing hover and active states consistently across devices
+### 5. Forms
+- Style form labels and inputs
+- Implement focus states
+- Create consistent spacing
+- Style textareas
 
-Getting Started
+### 6. Responsive Design
+- Make the component grid responsive
+- Implement mobile-friendly styles
+- Use media queries effectively
 
-Fork or clone this repository.
+### 7. Advanced: CSS Variables
+- Implement a color system using CSS variables
+- Create theme switching functionality
+- Ensure consistent theming across components
 
-Open index.html in VS Code or your preferred editor.
+## CSS Variables Provided
 
-All CSS is in styles.css.
+We've provided a set of CSS variables to help you maintain consistency:
 
-Open the HTML file in a browser to view your styled lab.
+```css
+:root {
+  --primary: #4361ee;
+  --secondary: #3a0ca3;
+  --success: #4cc9f0;
+  --warning: #f72585;
+  --info: #7209b7;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --gray: #6c757d;
+  --light-gray: #e9ecef;
+  --white: #ffffff;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --body-bg: #f5f7ff;
+  --card-bg: #ffffff;
+  --text-color: #212529;
+  --border-color: #e9ecef;
+}
+```
 
-Notes
+## Tips for Success
 
-Interactive states and hover effects were added to improve usability.
+1. **Start Simple**: Begin with basic styling before adding advanced effects
+2. **Use Developer Tools**: Test and debug your styles in the browser
+3. **Be Consistent**: Maintain consistent spacing, colors, and styles
+4. **Test Responsiveness**: Check your styles at different screen sizes
+5. **Reference Materials**: Use MDN Web Docs and other CSS references
 
-Colors, spacing, and typography were chosen for readability and aesthetic consistency.
+## Evaluation Criteria
 
-Media queries ensure proper scaling for tablets and mobile devices.
+Your implementation will be evaluated on:
 
-Submission
+1. **Visual Design**: Attractive and modern appearance
+2. **Consistency**: Uniform styling across components
+3. **Functionality**: Proper hover states and interactions
+4. **Responsiveness**: Works well on different screen sizes
+5. **Code Quality**: Well-organized and efficient CSS
 
-All completed files (index.html and styles.css) are in this repository. Open index.html to see the final styled lab.
+## Extension Challenges
+
+If you finish early, try these additional challenges:
+
+1. Add animations to component interactions
+2. Implement a dark/light mode toggle
+3. Create additional component variants
+4. Add focus styles for accessibility
+5. Optimize your CSS for performance
+
+## Resources
+
+- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CSS Tricks Guides](https://css-tricks.com/guides/)
+- [Google Fonts](https://fonts.google.com/)
+- [Color Hunt](https://colorhunt.co/) for color palette inspiration
+
+## Submission
+
+Submit your completed HTML file with all CSS implemented on GitHub. Include a brief document explaining your design decisions and any challenges you faced.
+
+Good luck, and have fun styling!
