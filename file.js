@@ -1,1067 +1,698 @@
-/* RESET AND BASE STYLES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-:root {
-  --primary: #4361ee;
-  --secondary: #3a0ca3;
-  --success: #4cc9f0;
-  --warning: #f72585;
-  --info: #7209b7;
-  --light: #f8f9fa;
-  --dark: #212529;
-  --gray: #6c757d;
-  --light-gray: #e9ecef;
-  --white: #ffffff;
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
-  --body-bg: #f5f7ff;
-  --card-bg: #ffffff;
-  --text-color: #212529;
-  --border-color: #e9ecef;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--body-bg);
-  padding: 20px;
-  transition: var(--transition);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  color: var(--primary);
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-}
-
-h2 {
-  color: var(--secondary);
-  margin: 30px 0 15px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--light-gray);
-}
-
-h3 {
-  color: var(--info);
-  margin: 20px 0 10px;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-.section {
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: var(--card-shadow);
-}
-
-.component-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-/* ========== IMPLEMENT THE STYLES BELOW ========== */
-
-/* Dark theme specific overrides */
-.dark-theme .form-input,
-.dark-theme .form-select,
-.dark-theme .form-textarea {
-  /* TODO: Add dark theme form control styles */
-  /* HINT: Use background-color, color, and border-color */
-}
-
-.dark-theme .table th {
-  /* TODO: Add dark theme table header styles */
-  /* HINT: Use background-color */
-}
-
-.dark-theme .code-editor {
-  /* TODO: Add dark theme code editor styles */
-  /* HINT: Use background-color */
-}
-
-/* Card Styles */
-.card {
-  /* TODO: Add card styles */
-  /* HINT: Use background-color, border-radius, box-shadow, transition */
-}
-
-.card:hover {
-  /* TODO: Add hover styles for card */
-  /* HINT: Use transform and box-shadow */
-}
-
-.card-img {
-  /* TODO: Add card image styles */
-  /* HINT: Set width, height, and object-fit */
-}
-
-.card-content {
-  /* TODO: Add card content styles */
-  /* HINT: Add padding */
-}
-
-.card-title {
-  /* TODO: Add card title styles */
-  /* HINT: Set font-size, margin, and color */
-}
-
-.card-text {
-  /* TODO: Add card text styles */
-  /* HINT: Set color and margin */
-}
-
-/* Button Styles */
-.btn {
-  /* TODO: Add button styles */
-  /* HINT: Use display, padding, background-color, color, border, border-radius, cursor, transition */
-}
-
-.btn:hover {
-  /* TODO: Add button hover styles */
-  /* HINT: Change background-color */
-}
-
-.btn-success {
-  /* TODO: Add success button styles */
-  /* HINT: Change background-color */
-}
-
-.btn-warning {
-  /* TODO: Add warning button styles */
-  /* HINT: Change background-color */
-}
-
-.btn-info {
-  /* TODO: Add info button styles */
-  /* HINT: Change background-color */
-}
-
-.btn-outline {
-  /* TODO: Add outline button styles */
-  /* HINT: Transparent background with border and specific text color */
-}
-
-.btn-outline:hover {
-  /* TODO: Add hover styles for outline button */
-  /* HINT: Change background-color and text color */
-}
-
-.btn-group {
-  /* TODO: Add button group styles */
-  /* HINT: Use display and gap */
-}
-
-/* Chip Styles */
-.chips-container {
-  /* TODO: Add chips container styles */
-  /* HINT: Use display, flex-wrap, gap, and margin */
-}
-
-.chip {
-  /* TODO: Add chip styles */
-  /* HINT: Use display, align-items, padding, background-color, border-radius, font-size, color, and cursor */
-}
-
-.chip.active {
-  /* TODO: Add active chip styles */
-  /* HINT: Change background-color and color */
-}
-
-.chip i {
-  /* TODO: Add icon styles within chips */
-  /* HINT: Use margin-right */
-}
-
-.chip .close {
-  /* TODO: Add close button styles within chips */
-  /* HINT: Use margin-left, cursor, and font-weight */
-}
-
-/* Slider Styles */
-.slider-container {
-  /* TODO: Add slider container styles */
-  /* HINT: Use margin */
-}
-
-.slider {
-  /* TODO: Add slider styles */
-  /* HINT: Use appearance, width, height, border-radius, background, and outline */
-}
-
-.slider::-webkit-slider-thumb {
-  /* TODO: Add slider thumb styles */
-  /* HINT: Use appearance, width, height, border-radius, background, cursor, and transition */
-}
-
-.slider::-webkit-slider-thumb:hover {
-  /* TODO: Add hover styles for slider thumb */
-  /* HINT: Use background and transform */
-}
-
-.slider-value {
-  /* TODO: Add slider value styles */
-  /* HINT: Use text-align, font-weight, and color */
-}
-
-/* Switch Styles */
-.switch-container {
-  /* TODO: Add switch container styles */
-  /* HINT: Use display, align-items, and margin */
-}
-
-.switch {
-  /* TODO: Add switch styles */
-  /* HINT: Use position, display, width, height, and margin-right */
-}
-
-.switch input {
-  /* TODO: Add switch input styles */
-  /* HINT: Use opacity, width, and height */
-}
-
-.slider-round {
-  /* TODO: Add slider round styles */
-  /* HINT: Use position, cursor, top/left/right/bottom properties, background-color, transition, and border-radius */
-}
-
-.slider-round:before {
-  /* TODO: Add slider round before element styles */
-  /* HINT: Use position, content, height, width, left, bottom, background-color, transition, and border-radius */
-}
-
-input:checked + .slider-round {
-  /* TODO: Add checked slider round styles */
-  /* HINT: Change background-color */
-}
-
-input:checked + .slider-round:before {
-  /* TODO: Add checked slider round before element styles */
-  /* HINT: Use transform with translateX */
-}
-
-/* List Styles */
-.list {
-  /* TODO: Add list styles */
-  /* HINT: Use list-style-type, background-color, border-radius, overflow, and box-shadow */
-}
-
-.list-item {
-  /* TODO: Add list item styles */
-  /* HINT: Use padding, border-bottom, display, align-items, cursor, and transition */
-}
-
-.list-item:last-child {
-  /* TODO: Add styles for last list item */
-  /* HINT: Remove border-bottom */
-}
-
-.list-item:hover {
-  /* TODO: Add hover styles for list items */
-  /* HINT: Change background-color */
-}
-
-.list-item i {
-  /* TODO: Add icon styles in list items */
-  /* HINT: Use margin-right and color */
-}
-
-.list-item .avatar {
-  /* TODO: Add avatar styles in list items */
-  /* HINT: Use width, height, border-radius, margin-right, and object-fit */
-}
-
-/* Form Styles */
-.form-group {
-  /* TODO: Add form group styles */
-  /* HINT: Add margin-bottom */
-}
-
-.form-label {
-  /* TODO: Add form label styles */
-  /* HINT: Use display, margin, and font-weight */
-}
-
-.form-input {
-  /* TODO: Add form input styles */
-  /* HINT: Use width, padding, border, border-radius, font-size, transition */
-}
-
-.form-input:focus {
-  /* TODO: Add focus styles for form inputs */
-  /* HINT: Use outline, border-color, and box-shadow */
-}
-
-.form-select {
-  /* TODO: Add form select styles */
-  /* HINT: Similar to form-input, with additional background-color */
-}
-
-.form-textarea {
-  /* TODO: Add textarea styles */
-  /* HINT: Similar to form-input, with additional min-height and resize properties */
-}
-
-/* Table Styles */
-.table-container {
-  /* TODO: Add table container styles */
-  /* HINT: Use overflow-x and margin */
-}
-
-.table {
-  /* TODO: Add table styles */
-  /* HINT: Use width, border-collapse, border-spacing */
-}
-
-.table th,
-.table td {
-  /* TODO: Add table cell styles */
-  /* HINT: Use padding, text-align, border-bottom */
-}
-
-.table th {
-  /* TODO: Add table header styles */
-  /* HINT: Use background-color, font-weight, cursor */
-}
-
-.table th:hover {
-  /* TODO: Add hover styles for table headers */
-  /* HINT: Change background-color */
-}
-
-.table tr {
-  /* TODO: Add table row styles */
-  /* HINT: Use transition */
-}
-
-.table tr:hover {
-  /* TODO: Add hover styles for table rows */
-  /* HINT: Change background-color with rgba for transparency */
-}
-
-/* Badge Styles */
-.badge {
-  /* TODO: Add badge styles */
-  /* HINT: Use display, padding, border-radius, font-size, font-weight, and margin-left */
-}
-
-.badge-primary {
-  /* TODO: Add primary badge styles */
-  /* HINT: Use background-color and color */
-}
-
-.badge-success {
-  /* TODO: Add success badge styles */
-  /* HINT: Use background-color and color */
-}
-
-.badge-warning {
-  /* TODO: Add warning badge styles */
-  /* HINT: Use background-color and color */
-}
-
-/* Alert Styles */
-.alert {
-  /* TODO: Add alert styles */
-  /* HINT: Use padding, border-radius, margin-bottom, display, align-items, and justify-content */
-}
-
-.alert i {
-  /* TODO: Add icon styles in alerts */
-  /* HINT: Use margin-right and font-size */
-}
-
-.alert-content {
-  /* TODO: Add alert content styles */
-  /* HINT: Use display and align-items */
-}
-
-.alert-close {
-  /* TODO: Add alert close button styles */
-  /* HINT: Use cursor and font-weight */
-}
-
-.alert-success {
-  /* TODO: Add success alert styles */
-  /* HINT: Use background-color, color, and border-left */
-}
-
-.alert-warning {
-  /* TODO: Add warning alert styles */
-  /* HINT: Use background-color, color, and border-left */
-}
-
-.alert-info {
-  /* TODO: Add info alert styles */
-  /* HINT: Use background-color, color, and border-left */
-}
-
-/* Navigation Styles */
-.nav {
-  /* TODO: Add navigation styles */
-  /* HINT: Use display, background-color, border-radius, overflow, and margin-bottom */
-}
-
-.nav-item {
-  /* TODO: Add navigation item styles */
-  /* HINT: Use padding, color, text-decoration, transition */
-}
-
-.nav-item:hover {
-  /* TODO: Add hover styles for nav items */
-  /* HINT: Change background-color */
-}
-
-.nav-item.active {
-  /* TODO: Add styles for active nav item */
-  /* HINT: Use background-color and font-weight */
-}
-
-/* Progress Bar Styles */
-.progress {
-  /* TODO: Add progress bar container styles */
-  /* HINT: Use height, background-color, border-radius, margin, and overflow */
-}
-
-.progress-bar {
-  /* TODO: Add progress bar styles */
-  /* HINT: Use height, border-radius, and transition */
-}
-
-.progress-primary {
-  /* TODO: Add primary progress bar styles */
-  /* HINT: Use background-color */
-}
-
-.progress-success {
-  /* TODO: Add success progress bar styles */
-  /* HINT: Use background-color */
-}
-
-/* Pagination Styles */
-.pagination {
-  /* TODO: Add pagination styles */
-  /* HINT: Use display, list-style, padding, and margin */
-}
-
-.page-item {
-  /* TODO: Add page item styles */
-  /* HINT: Use margin-right */
-}
-
-.page-link {
-  /* TODO: Add page link styles */
-  /* HINT: Use display, padding, border, border-radius, color, text-decoration, transition, and cursor */
-}
-
-.page-link:hover {
-  /* TODO: Add hover styles for page links */
-  /* HINT: Change background-color */
-}
-
-.page-item.active .page-link {
-  /* TODO: Add styles for active page link */
-  /* HINT: Use background-color, color, and border-color */
-}
-
-/* Breadcrumb Styles */
-.breadcrumb {
-  /* TODO: Add breadcrumb styles */
-  /* HINT: Use display, list-style, padding, and margin */
-}
-
-.breadcrumb-item {
-  /* TODO: Add breadcrumb item styles */
-  /* HINT: Use display and align-items */
-}
-
-.breadcrumb-item:not(:last-child)::after {
-  /* TODO: Add separator for breadcrumb items */
-  /* HINT: Use content, margin, and color */
-}
-
-.breadcrumb-link {
-  /* TODO: Add breadcrumb link styles */
-  /* HINT: Use color, text-decoration, and cursor */
-}
-
-.breadcrumb-link:hover {
-  /* TODO: Add hover styles for breadcrumb links */
-  /* HINT: Add text-decoration */
-}
-
-.breadcrumb-item.active {
-  /* TODO: Add styles for active breadcrumb item */
-  /* HINT: Use color */
-}
-
-/* Modal Styles */
-.modal {
-  /* TODO: Add modal styles */
-  /* HINT: Use display, position, top/left, width, height, background-color, z-index, justify-content, and align-items */
-}
-
-.modal-content {
-  /* TODO: Add modal content styles */
-  /* HINT: Use background-color, border-radius, width, max-width, padding, and box-shadow */
-}
-
-.modal-header {
-  /* TODO: Add modal header styles */
-  /* HINT: Use display, justify-content, align-items, and margin-bottom */
-}
-
-.modal-title {
-  /* TODO: Add modal title styles */
-  /* HINT: Use font-size and color */
-}
-
-.modal-close {
-  /* TODO: Add modal close button styles */
-  /* HINT: Use background, border, font-size, cursor, and color */
-}
-
-/* Tooltip Styles */
-.tooltip {
-  /* TODO: Add tooltip styles */
-  /* HINT: Use position, display, border-bottom, and cursor */
-}
-
-.tooltip .tooltip-text {
-  /* TODO: Add tooltip text styles */
-  /* HINT: Use visibility, width, background-color, color, text-align, border-radius, padding, position, z-index, bottom, left, margin-left, opacity, and transition */
-}
-
-.tooltip .tooltip-text::after {
-  /* TODO: Add tooltip arrow styles */
-  /* HINT: Use content, position, top, left, margin-left, border-width, border-style, and border-color */
-}
-
-.tooltip:hover .tooltip-text {
-  /* TODO: Add hover styles for tooltip */
-  /* HINT: Change visibility and opacity */
-}
-
-/* Accordion Styles */
-.accordion {
-  /* TODO: Add accordion styles */
-  /* HINT: Use margin */
-}
-
-.accordion-item {
-  /* TODO: Add accordion item styles */
-  /* HINT: Use border, border-radius, margin-bottom, and overflow */
-}
-
-.accordion-header {
-  /* TODO: Add accordion header styles */
-  /* HINT: Use padding, background-color, cursor, display, justify-content, align-items, and font-weight */
-}
-
-.accordion-content {
-  /* TODO: Add accordion content styles */
-  /* HINT: Use padding, max-height, overflow, and transition */
-}
-
-.accordion-content.active {
-  /* TODO: Add styles for active accordion content */
-  /* HINT: Use padding and max-height */
-}
-
-/* Tabs Styles */
-.tabs {
-  /* TODO: Add tabs container styles */
-  /* HINT: Use margin */
-}
-
-.tab-header {
-  /* TODO: Add tab header styles */
-  /* HINT: Use display and border-bottom */
-}
-
-.tab-link {
-  /* TODO: Add tab link styles */
-  /* HINT: Use padding, cursor, transition, and border-bottom */
-}
-
-.tab-link:hover {
-  /* TODO: Add hover styles for tab links */
-  /* HINT: Change color */
-}
-
-.tab-link.active {
-  /* TODO: Add styles for active tab link */
-  /* HINT: Use color and border-bottom */
-}
-
-.tab-content {
-  /* TODO: Add tab content styles */
-  /* HINT: Use padding */
-}
-
-.tab-pane {
-  /* TODO: Add tab pane styles */
-  /* HINT: Use display property */
-}
-
-.tab-pane.active {
-  /* TODO: Add styles for active tab pane */
-  /* HINT: Change display */
-}
-
-/* Dropdown Styles */
-.dropdown {
-  /* TODO: Add dropdown styles */
-  /* HINT: Use position and display */
-}
-
-.dropdown-toggle {
-  /* TODO: Add dropdown toggle styles */
-  /* HINT: Use padding, background-color, color, border, border-radius, cursor, display, and align-items */
-}
-
-.dropdown-toggle::after {
-  /* TODO: Add dropdown toggle indicator */
-  /* HINT: Use content, margin-left, and font-size */
-}
-
-.dropdown-menu {
-  /* TODO: Add dropdown menu styles */
-  /* HINT: Use position, top, left, background-color, border-radius, box-shadow, min-width, z-index, and display */
-}
-
-.dropdown-menu.show {
-  /* TODO: Add styles for visible dropdown menu */
-  /* HINT: Change display */
-}
-
-.dropdown-item {
-  /* TODO: Add dropdown item styles */
-  /* HINT: Use padding, display, color, text-decoration, and transition */
-}
-
-.dropdown-item:hover {
-  /* TODO: Add hover styles for dropdown items */
-  /* HINT: Change background-color */
-}
-
-/* Toast Styles */
-.toast-container {
-  /* TODO: Add toast container styles */
-  /* HINT: Use position, bottom, right, and z-index */
-}
-
-.toast {
-  /* TODO: Add toast styles */
-  /* HINT: Use padding, background-color, border-radius, box-shadow, margin-bottom, display, align-items, justify-content, min-width, transform, opacity, and transition */
-}
-
-.toast.show {
-  /* TODO: Add styles for visible toast */
-  /* HINT: Use transform and opacity */
-}
-
-.toast-success {
-  /* TODO: Add success toast styles */
-  /* HINT: Use border-left */
-}
-
-.toast-warning {
-  /* TODO: Add warning toast styles */
-  /* HINT: Use border-left */
-}
-
-.toast-close {
-  /* TODO: Add toast close button styles */
-  /* HINT: Use cursor and font-weight */
-}
-
-/* Code Editor Styles */
-.code-editor {
-  /* TODO: Add code editor styles */
-  /* HINT: Use background-color, border-radius, padding, margin, font-family, color, and overflow-x */
-}
-
-.code-comment {
-  /* TODO: Add code comment styles */
-  /* HINT: Use color */
-}
-
-.code-selector {
-  /* TODO: Add code selector styles */
-  /* HINT: Use color */
-}
-
-.code-property {
-  /* TODO: Add code property styles */
-  /* HINT: Use color */
-}
-
-.code-value {
-  /* TODO: Add code value styles */
-  /* HINT: Use color */
-}
-
-/* Theme Selector */
-.theme-selector {
-  /* TODO: Add theme selector styles */
-  /* HINT: Use position, top, right, and z-index */
-}
-
-.theme-btn {
-  /* TODO: Add theme button styles */
-  /* HINT: Use padding, background-color, color, border, border-radius, and cursor */
-}
-
-/* Animation Classes */
-.fade-in {
-  /* TODO: Add fade-in animation */
-  /* HINT: Use animation property */
-}
-
-.slide-in {
-  /* TODO: Add slide-in animation */
-  /* HINT: Use animation property */
-}
-
-.bounce {
-  /* TODO: Add bounce animation */
-  /* HINT: Use animation property */
-}
-
-@keyframes fadeIn {
-  /* TODO: Add fadeIn keyframes */
-  /* HINT: Define from and to states with opacity */
-}
-
-@keyframes slideIn {
-  /* TODO: Add slideIn keyframes */
-  /* HINT: Define from and to states with transform and opacity */
-}
-
-@keyframes bounce {
-  /* TODO: Add bounce keyframes */
-  /* HINT: Define keyframe percentages with transform */
-}
-
-/* Panel Header with close button */
-.panel-header {
-  /* TODO: Add panel header styles */
-  /* HINT: Use display, justify-content, align-items, margin-bottom, border-bottom, and padding-bottom */
-}
-
-.panel-close {
-  /* TODO: Add panel close button styles */
-  /* HINT: Use background, border, font-size, cursor, color, and transition */
-}
-
-.panel-close:hover {
-  /* TODO: Add hover styles for panel close button */
-  /* HINT: Use color and transform */
-}
-
-/* Pull tab that appears on the left edge when panel is closed */
-.panel-pull-tab {
-  /* TODO: Add panel pull tab styles */
-  /* HINT: Use position, top, left, transform, background-color, color, padding, border-radius, cursor, box-shadow, z-index, display, align-items, justify-content, and transition */
-}
-
-.panel-pull-tab:hover {
-  /* TODO: Add hover styles for panel pull tab */
-  /* HINT: Use padding-right and background-color */
-}
-
-/* Customization Panel */
-.customization-panel {
-  /* TODO: Add customization panel styles */
-  /* HINT: Use position, top, left, width, height, background-color, box-shadow, padding, overflow-y, transform, transition, and z-index */
-}
-
-.customization-panel.open {
-  /* TODO: Add styles for open customization panel */
-  /* HINT: Use transform */
-}
-
-.panel-toggle {
-  /* TODO: Add panel toggle styles */
-  /* HINT: Use position, top, right, z-index, padding, background-color, color, border, border-radius, and cursor */
-}
-
-.color-option {
-  /* TODO: Add color option styles */
-  /* HINT: Use width, height, border-radius, display, margin, cursor, and border */
-}
-
-.color-option.active {
-  /* TODO: Add active color option styles */
-  /* HINT: Use border-color */
-}
-
-/* Interactive Widgets */
-.interactive-widgets {
-  /* TODO: Add interactive widgets container styles */
-  /* HINT: Use display, grid-template-columns, gap, and margin-bottom */
-}
-
-.widget {
-  /* TODO: Add widget styles */
-  /* HINT: Use background-color, border-radius, box-shadow, padding, display, and transition */
-}
-
-.widget:hover {
-  /* TODO: Add hover styles for widgets */
-  /* HINT: Use transform and box-shadow */
-}
-
-.widget i {
-  /* TODO: Add widget icon styles */
-  /* HINT: Use font-size, color, and margin-right */
-}
-
-.widget-content {
-  /* TODO: Add widget content styles */
-  /* HINT: Use flex property */
-}
-
-.widget h3 {
-  /* TODO: Add widget heading styles */
-  /* HINT: Use margin-top, margin-bottom, color, and font-size */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* TODO: Add responsive styles for mobile */
-  /* HINT: Adjust component-grid, btn-group, nav, and tab-header */
-
-  .component-grid {
-    /* Change grid to single column */
-  }
-
-  .btn-group {
-    /* Stack buttons vertically */
-  }
-
-  .nav {
-    /* Make nav items stack vertically */
-  }
-
-  .tab-header {
-    /* Make tab links stack vertically */
+// Simple JavaScript for interactive components
+document.addEventListener("DOMContentLoaded", function () {
+  // Update slider values
+  const sliders = document.querySelectorAll(".slider");
+  sliders.forEach((slider) => {
+    const valueDisplay = slider.nextElementSibling;
+    valueDisplay.textContent = slider.value + "%";
+
+    slider.addEventListener("input", function () {
+      valueDisplay.textContent = this.value + "%";
+    });
+  });
+
+  // Chip close functionality
+  const chipCloses = document.querySelectorAll(".chip .close");
+  chipCloses.forEach((close) => {
+    close.addEventListener("click", function (e) {
+      e.stopPropagation();
+      this.parentElement.style.display = "none";
+      showToast("Chip removed", "info");
+    });
+  });
+});
+
+// Accordion functionality
+function toggleAccordion(element) {
+  const content = element.nextElementSibling;
+  const isActive = content.classList.contains("active");
+
+  // Close all accordion items
+  document.querySelectorAll(".accordion-content").forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  document.querySelectorAll(".accordion-header i").forEach((icon) => {
+    icon.textContent = "expand_more";
+  });
+
+  // Open clicked item if it wasn't already active
+  if (!isActive) {
+    content.classList.add("active");
+    element.querySelector("i").textContent = "expand_less";
   }
 }
 
-/* ========== PRESERVED WIDGET STYLES ========== */
-
-/* Clock Widget */
-#clock {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--primary);
-  margin: 10px 0;
+// Modal functionality
+function openModal() {
+  document.getElementById("modal").style.display = "flex";
 }
 
-.clock-toggle {
-  display: flex;
-  margin-top: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-  width: fit-content;
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
 }
 
-.clock-toggle-btn {
-  padding: 5px 10px;
-  background-color: var(--light-gray);
-  border: none;
-  cursor: pointer;
-  transition: var(--transition);
-  font-size: 0.8rem;
+// Close modal when clicking outside the content
+window.onclick = function (event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
+
+// Toast functionality
+function showToast(message, type = "info") {
+  const toastContainer = document.getElementById("toastContainer");
+  const toast = document.createElement("div");
+  toast.className = `toast toast-${type}`;
+  toast.innerHTML = `
+                <div>${message}</div>
+                <span class="toast-close" onclick="this.parentElement.remove()">&times;</span>
+            `;
+
+  toastContainer.appendChild(toast);
+
+  // Show toast with animation
+  setTimeout(() => {
+    toast.classList.add("show");
+  }, 10);
+
+  // Auto remove after 5 seconds
+  setTimeout(() => {
+    if (toast.parentElement) {
+      toast.classList.remove("show");
+      setTimeout(() => {
+        if (toast.parentElement) {
+          toastContainer.removeChild(toast);
+        }
+      }, 300);
+    }
+  }, 5000);
 }
 
-.clock-toggle-btn.active {
-  background-color: var(--primary);
-  color: var(--white);
+// Tab functionality
+function openTab(evt, tabId) {
+  // Hide all tab panes
+  document.querySelectorAll(".tab-pane").forEach((pane) => {
+    pane.style.display = "none";
+  });
+
+  // Remove active class from all tab links
+  document.querySelectorAll(".tab-link").forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  // Show the selected tab pane
+  document.getElementById(tabId).style.display = "block";
+
+  // Add active class to the clicked tab link
+  evt.currentTarget.classList.add("active");
 }
 
-/* Analog Clock */
-#analog-clock-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+// Dropdown functionality
+function toggleDropdown(button) {
+  const dropdownMenu = button.nextElementSibling;
+  dropdownMenu.classList.toggle("show");
+
+  // Close dropdown when clicking outside
+  window.onclick = function (e) {
+    if (!e.target.matches(".dropdown-toggle")) {
+      dropdownMenu.classList.remove("show");
+    }
+  };
 }
 
-#analog-clock {
-  width: 150px;
-  height: 150px;
+// Chip functionality
+function toggleChip(chip) {
+  chip.classList.toggle("active");
+  const isActive = chip.classList.contains("active");
+  showToast(
+    `Chip ${isActive ? "activated" : "deactivated"}`,
+    isActive ? "success" : "info"
+  );
 }
 
-#date {
-  color: var(--gray);
+function removeChip(event, chip) {
+  event.stopPropagation();
+  chip.style.display = "none";
+  showToast("Chip removed", "info");
 }
 
-/* Calendar Widget */
-#current-month {
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 10px;
+// Switch functionality
+function toggleSwitch(name, isChecked) {
+  showToast(
+    `${name} ${isChecked ? "enabled" : "disabled"}`,
+    isChecked ? "success" : "info"
+  );
 }
 
-.mini-calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+// List item functionality
+function selectListItem(item) {
+  document.querySelectorAll(".list-item").forEach((li) => {
+    li.style.backgroundColor = "";
+  });
+  item.style.backgroundColor = "rgba(67, 97, 238, 0.1)";
+  showToast(`Selected: ${item.querySelector("span").textContent}`, "success");
 }
 
-.calendar-day {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 0.9rem;
+// Form functionality
+function handleFormSubmit(event) {
+  event.preventDefault();
+  showToast("Form submitted successfully!", "success");
+
+  // Reset form
+  event.target.reset();
 }
 
-.calendar-day.current {
-  background-color: var(--primary);
-  color: white;
-  font-weight: bold;
+// Table functionality
+function editItem(button) {
+  const row = button.parentElement.parentElement;
+  const name = row.cells[0].textContent;
+  showToast(`Editing: ${name}`, "info");
 }
 
-.calendar-day.day-name {
-  font-weight: bold;
-  color: var(--dark);
+function deleteItem(button) {
+  const row = button.parentElement.parentElement;
+  const name = row.cells[0].textContent;
+  row.style.opacity = "0.5";
+  showToast(`Deleted: ${name}`, "warning");
 }
 
-/* Mood Widget */
-.mood-tracker {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
+function sortTable(columnIndex) {
+  showToast(`Sorting by column ${columnIndex + 1}`, "info");
 }
 
-.mood-emoji {
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+// Alert functionality
+function closeAlert(alert) {
+  alert.style.display = "none";
 }
 
-.mood-emoji:hover {
-  transform: scale(1.2);
+function showAlert(type) {
+  let message = "";
+  switch (type) {
+    case "success":
+      message = "This is a success message!";
+      break;
+    case "warning":
+      message = "This is a warning message!";
+      break;
+    case "info":
+      message = "This is an info message!";
+      break;
+  }
+  showToast(message, type);
 }
 
-#mood-response {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--gray);
-  height: 20px;
+// Progress bar functionality
+function animateProgress(id, targetWidth) {
+  const progressBar = document.getElementById(id);
+  progressBar.style.width = targetWidth + "%";
+  showToast(`Progress updated to ${targetWidth}%`, "success");
 }
 
-/* Dark theme overrides for widgets */
-.dark-theme .widget {
-  background-color: var(--card-bg);
+// Pagination functionality
+function changePage(page) {
+  showToast(`Navigating to page ${page}`, "info");
 }
 
-.dark-theme #date,
-.dark-theme #mood-response {
-  color: var(--text-color);
-  opacity: 0.8;
+// Breadcrumb functionality
+function navigateBreadcrumb(page) {
+  showToast(`Navigating to ${page}`, "info");
 }
 
-/* Footer Styles */
-.footer {
-  margin-top: 50px;
-  padding: 20px 0;
-  background-color: var(--card-bg);
-  border-top: 1px solid var(--border-color);
-  text-align: center;
+// Navigation functionality
+function setActiveNav(item) {
+  document.querySelectorAll(".nav-item").forEach((navItem) => {
+    navItem.classList.remove("active");
+  });
+  item.classList.add("active");
+  showToast(`Navigating to ${item.textContent}`, "info");
 }
 
-.footer-container {
-  padding: 0 20px;
+// Update slider value display
+function updateSliderValue(slider, valueId) {
+  document.getElementById(valueId).textContent = slider.value + "%";
 }
 
-.footer p {
-  color: var(--text-color);
-  font-size: 0.9rem;
-  margin: 0;
+// Update opacity based on slider
+function updateOpacity(value) {
+  document.querySelectorAll(".section").forEach((section) => {
+    section.style.opacity = value / 100;
+  });
 }
 
-/* Dark theme override for footer */
-.dark-theme .footer {
-  background-color: var(--card-bg);
-  border-color: var(--border-color);
+// Customization panel functionality
+function togglePanel() {
+  const panel = document.getElementById("customPanel");
+  const pullTab = document.getElementById("panelPullTab");
+  panel.classList.toggle("open");
+
+  // Show/hide pull tab based on panel state
+  if (panel.classList.contains("open")) {
+    pullTab.style.display = "none";
+  } else {
+    setTimeout(() => {
+      pullTab.style.display = "flex";
+    }, 300); // Match the panel transition time
+  }
+}
+// Handle keyboard shortcuts
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    const panel = document.getElementById("customPanel");
+    if (panel.classList.contains("open")) {
+      togglePanel();
+    }
+  }
+});
+
+// Handle click outside to close
+document.addEventListener("click", function (event) {
+  const panel = document.getElementById("customPanel");
+  const panelToggle = document.querySelector(".panel-toggle");
+  const pullTab = document.getElementById("panelPullTab");
+
+  if (pullTab.contains(event.target)) {
+    return;
+  }
+  if (
+    panel.classList.contains("open") &&
+    !panel.contains(event.target) &&
+    event.target !== panelToggle &&
+    !panelToggle.contains(event.target)
+  ) {
+    togglePanel();
+  }
+});
+
+// Add touch swipe support for mobile
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener(
+  "touchstart",
+  function (event) {
+    touchStartX = event.changedTouches[0].screenX;
+  },
+  false
+);
+
+document.addEventListener(
+  "touchend",
+  function (event) {
+    touchEndX = event.changedTouches[0].screenX;
+    handleSwipe();
+  },
+  false
+);
+
+function handleSwipe() {
+  const panel = document.getElementById("customPanel");
+  const swipeThreshold = 50; // minimum distance for swipe
+
+  // Right to left swipe (close panel)
+  if (
+    panel.classList.contains("open") &&
+    touchStartX - touchEndX > swipeThreshold
+  ) {
+    togglePanel();
+  }
+
+  // Left to right swipe (open panel)
+  if (
+    !panel.classList.contains("open") &&
+    touchEndX - touchStartX > swipeThreshold &&
+    touchStartX < 50
+  ) {
+    togglePanel();
+  }
 }
 
-/* Challenge Instructions Section Styling */
-.instruction-section {
-  border-left: 4px solid var(--primary);
-  background-color: rgba(67, 97, 238, 0.05);
-  position: relative;
+// Initialize panel state on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const panel = document.getElementById("customPanel");
+  const pullTab = document.getElementById("panelPullTab");
+
+  // Initial clock update
+  updateClock();
+  // Update clock every second
+  setInterval(updateClock, 1000);
+
+  // Generate calendar
+  generateCalendar();
+
+  if (!panel.classList.contains("open")) {
+    pullTab.style.display = "flex";
+  }
+});
+
+function changeColor(variable, color) {
+  document.documentElement.style.setProperty(`--${variable}`, color);
+
+  // Update active color indicator
+  document.querySelectorAll(".color-option").forEach((option) => {
+    option.classList.remove("active");
+  });
+  event.target.classList.add("active");
+
+  showToast(`Color changed to ${color}`, "success");
 }
 
-.instruction-section h2 {
-  color: var(--primary);
-  font-size: 1.6rem;
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 12px;
-  margin-bottom: 20px;
+function changeTheme(theme) {
+  let primary, secondary, light, dark, bodyBg, cardBg, textColor, borderColor;
+
+  switch (theme) {
+    case "dark":
+      // Dark theme colors
+      primary = "#7b68ee"; // Brighter purple for better visibility
+      secondary = "#4cc9f0"; // Bright blue for accents
+      light = "#2d3748"; // Dark gray for light elements
+      dark = "#f8f9fa"; // White for dark text
+      bodyBg = "#121212"; // Near black for body background
+      cardBg = "#1e1e1e"; // Dark gray for card backgrounds
+      textColor = "#e2e8f0"; // Light gray for text
+      borderColor = "#4a5568"; // Medium gray for borders
+      break;
+    case "blue":
+      primary = "#0077b6";
+      secondary = "#00b4d8";
+      light = "#caf0f8";
+      dark = "#03045e";
+      bodyBg = "#f5f7ff";
+      cardBg = "#ffffff";
+      textColor = "#212529";
+      borderColor = "#e9ecef";
+      break;
+    case "green":
+      primary = "#2a9d8f";
+      secondary = "#e9c46a";
+      light = "#e9f5db";
+      dark = "#264653";
+      bodyBg = "#f5f7ff";
+      cardBg = "#ffffff";
+      textColor = "#212529";
+      borderColor = "#e9ecef";
+      break;
+    default: // light
+      primary = "#4361ee";
+      secondary = "#3a0ca3";
+      light = "#f8f9fa";
+      dark = "#212529";
+      bodyBg = "#f5f7ff";
+      cardBg = "#ffffff";
+      textColor = "#212529";
+      borderColor = "#e9ecef";
+  }
+
+  // Set all theme-related CSS variables
+  document.documentElement.style.setProperty("--primary", primary);
+  document.documentElement.style.setProperty("--secondary", secondary);
+  document.documentElement.style.setProperty("--light", light);
+  document.documentElement.style.setProperty("--dark", dark);
+  document.documentElement.style.setProperty("--body-bg", bodyBg);
+  document.documentElement.style.setProperty("--card-bg", cardBg);
+  document.documentElement.style.setProperty("--text-color", textColor);
+  document.documentElement.style.setProperty("--border-color", borderColor);
+
+  // Apply theme class to body
+  if (theme === "dark") {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
+
+  showToast(`Theme changed to ${theme}`, "success");
 }
 
-.instruction-section ol {
-  padding-left: 1.5rem;
-  margin: 1.5rem 0;
+function changeFontSize(size) {
+  document.documentElement.style.fontSize = size + "px";
+  document.getElementById("fontSizeValue").textContent = size + "px";
 }
 
-.instruction-section li {
-  margin-bottom: 12px;
-  position: relative;
-  padding-left: 10px;
+function changeBorderRadius(radius) {
+  document.documentElement.style.setProperty("--border-radius", radius + "px");
+  document.getElementById("borderRadiusValue").textContent = radius + "px";
+
+  // Apply to all elements with border-radius
+  document.querySelectorAll("*").forEach((el) => {
+    if (window.getComputedStyle(el).borderRadius !== "0px") {
+      el.style.borderRadius = radius + "px";
+    }
+  });
 }
 
-.instruction-section li::marker {
-  color: var(--primary);
-  font-weight: 600;
+function resetStyles() {
+  // Reset CSS variables to default values
+  document.documentElement.style.setProperty("--primary", "#4361ee");
+  document.documentElement.style.setProperty("--secondary", "#3a0ca3");
+  document.documentElement.style.setProperty("--light", "#f8f9fa");
+  document.documentElement.style.setProperty("--dark", "#212529");
+  document.documentElement.style.setProperty("--body-bg", "#f5f7ff");
+  document.documentElement.style.setProperty("--card-bg", "#ffffff");
+  document.documentElement.style.setProperty("--text-color", "#212529");
+  document.documentElement.style.setProperty("--border-color", "#e9ecef");
+
+  // Remove dark theme class
+  document.body.classList.remove("dark-theme");
+
+  // Reset font size to default (16px)
+  document.documentElement.style.fontSize = "16px";
+  document.getElementById("fontSize").value = "16";
+  document.getElementById("fontSizeValue").textContent = "16px";
+
+  // Reset border radius to default (5px)
+  document.documentElement.style.setProperty("--border-radius", "5px");
+  document.getElementById("borderRadius").value = "5";
+  document.getElementById("borderRadiusValue").textContent = "5px";
+
+  // Reset theme selector
+  document.getElementById("themeSelect").value = "light";
+
+  // Remove active state from color options
+  document.querySelectorAll(".color-option").forEach((option) => {
+    option.classList.remove("active");
+  });
+
+  // Add active class to the default primary color option
+  const defaultColorOption = document.querySelector(
+    '.color-option[style*="#4361ee"]'
+  );
+  if (defaultColorOption) {
+    defaultColorOption.classList.add("active");
+  }
+
+  showToast("Styles reset to default", "success");
 }
 
-.instruction-section strong {
-  color: var(--primary);
-  font-weight: 600;
+let clockType = "digital";
+
+// Function to set clock type
+function setClockType(type) {
+  clockType = type;
+
+  // Update toggle buttons
+  document
+    .getElementById("digitalToggle")
+    .classList.toggle("active", type === "digital");
+  document
+    .getElementById("analogToggle")
+    .classList.toggle("active", type === "analog");
+
+  // Show/hide appropriate clock display
+  const analogContainer = document.getElementById("analog-clock-container");
+  const digitalClock = document.getElementById("clock");
+
+  if (type === "digital") {
+    analogContainer.style.display = "none";
+    digitalClock.style.display = "block";
+  } else {
+    analogContainer.style.display = "flex";
+    digitalClock.style.display = "none";
+    drawAnalogClock(); // Initial draw
+  }
 }
 
-.instruction-section p:last-child {
-  background-color: rgba(67, 97, 238, 0.1);
-  padding: 12px 15px;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  border-left: 3px solid var(--primary);
+// Clock and date function
+function updateClock() {
+  const now = new Date();
+
+  if (clockType === "digital") {
+    const timeString = now.toLocaleTimeString();
+    document.getElementById("clock").textContent = timeString;
+  } else {
+    drawAnalogClock();
+  }
+
+  // Update date in both modes
+  const dateString = now.toLocaleDateString(undefined, {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  document.getElementById("date").textContent = dateString;
 }
 
-/* Dark theme overrides */
-.dark-theme .instruction-section {
-  background-color: rgba(123, 104, 238, 0.1);
+// Function to draw analog clock
+function drawAnalogClock() {
+  const canvas = document.getElementById("analog-clock");
+  const ctx = canvas.getContext("2d");
+  const radius = canvas.height / 2;
+
+  // Clear canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw clock face
+  ctx.beginPath();
+  ctx.arc(radius, radius, radius * 0.9, 0, 2 * Math.PI);
+  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue(
+    "--card-bg"
+  );
+  ctx.fill();
+
+  // Draw clock border
+  ctx.beginPath();
+  ctx.arc(radius, radius, radius * 0.9, 0, 2 * Math.PI);
+  ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue(
+    "--primary"
+  );
+  ctx.lineWidth = radius * 0.05;
+  ctx.stroke();
+
+  // Draw hour markers
+  for (let i = 0; i < 12; i++) {
+    const angle = (i * Math.PI) / 6;
+    ctx.beginPath();
+    const innerRadius = radius * 0.8;
+    const outerRadius = radius * 0.9;
+    ctx.moveTo(
+      radius + innerRadius * Math.sin(angle),
+      radius - innerRadius * Math.cos(angle)
+    );
+    ctx.lineTo(
+      radius + outerRadius * Math.sin(angle),
+      radius - outerRadius * Math.cos(angle)
+    );
+    ctx.lineWidth = radius * 0.02;
+    ctx.strokeStyle = getComputedStyle(
+      document.documentElement
+    ).getPropertyValue("--dark");
+    ctx.stroke();
+  }
+
+  // Draw center point
+  ctx.beginPath();
+  ctx.arc(radius, radius, radius * 0.05, 0, 2 * Math.PI);
+  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue(
+    "--primary"
+  );
+  ctx.fill();
+
+  // Get current time
+  const now = new Date();
+  const hour = now.getHours() % 12;
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+
+  // Draw hour hand
+  const hourAngle = ((hour + minute / 60) * Math.PI) / 6;
+  drawHand(ctx, hourAngle, radius * 0.5, radius * 0.05);
+
+  // Draw minute hand
+  const minuteAngle = ((minute + second / 60) * Math.PI) / 30;
+  drawHand(ctx, minuteAngle, radius * 0.7, radius * 0.04);
+
+  // Draw second hand
+  const secondAngle = (second * Math.PI) / 30;
+  ctx.beginPath();
+  ctx.moveTo(radius, radius);
+  ctx.lineTo(
+    radius + radius * 0.8 * Math.sin(secondAngle),
+    radius - radius * 0.8 * Math.cos(secondAngle)
+  );
+  ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue(
+    "--warning"
+  );
+  ctx.lineWidth = radius * 0.01;
+  ctx.stroke();
 }
 
-.dark-theme .instruction-section p:last-child {
-  background-color: rgba(76, 201, 240, 0.1);
+// Function to draw clock hands
+function drawHand(ctx, angle, length, width) {
+  const radius = ctx.canvas.height / 2;
+  ctx.beginPath();
+  ctx.moveTo(radius, radius);
+  ctx.lineTo(
+    radius + length * Math.sin(angle),
+    radius - length * Math.cos(angle)
+  );
+  ctx.lineWidth = width;
+  ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue(
+    "--dark"
+  );
+  ctx.stroke();
+}
+
+// Calendar function
+function generateCalendar() {
+  const now = new Date();
+  const month = now.getMonth();
+  const year = now.getFullYear();
+  const currentDay = now.getDate();
+
+  // Set the current month name
+  const monthName = now.toLocaleString("default", { month: "long" });
+  document.getElementById("current-month").textContent = `${monthName} ${year}`;
+
+  const calendarElement = document.getElementById("mini-calendar");
+  calendarElement.innerHTML = "";
+
+  // Add day names
+  const dayNames = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+  dayNames.forEach((day) => {
+    const dayElement = document.createElement("div");
+    dayElement.className = "calendar-day day-name";
+    dayElement.textContent = day;
+    calendarElement.appendChild(dayElement);
+  });
+
+  // Get first day of month and total days
+  const firstDay = new Date(year, month, 1).getDay();
+  const totalDays = new Date(year, month + 1, 0).getDate();
+
+  // Add empty spaces for days before the 1st
+  for (let i = 0; i < firstDay; i++) {
+    const emptyDay = document.createElement("div");
+    emptyDay.className = "calendar-day empty";
+    calendarElement.appendChild(emptyDay);
+  }
+
+  // Add days of the month
+  for (let day = 1; day <= totalDays; day++) {
+    const dayElement = document.createElement("div");
+    dayElement.className = "calendar-day";
+    dayElement.textContent = day;
+
+    // Highlight current day
+    if (day === currentDay) {
+      dayElement.classList.add("current");
+    }
+
+    calendarElement.appendChild(dayElement);
+  }
+}
+
+// Mood tracking function
+function trackMood(emoji) {
+  const responses = {
+    "😄": "Great to see you happy today!",
+    "🙂": "Looking good! Have a nice day.",
+    "😐": "Hope your day gets better soon.",
+    "😢": "Sorry you're feeling down.",
+    "😤": "Take a deep breath, things will improve.",
+  };
+
+  document.getElementById("mood-response").textContent = responses[emoji];
+  showToast(`Mood set to ${emoji}`, "success");
 }
